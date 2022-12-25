@@ -1,0 +1,86 @@
+.login {
+    background-color: #1e1e2d;
+}
+.login .content .form-control {
+    background: rgba(48, 48, 70, 0.62);
+    border: none;
+    height: 47px;
+    color: #d9ecf9;
+    border-radius: 59px !important;
+    font-family: "Poppins", Helvetica, sans-serif;
+    color:#74788d;
+    font-size: 1.3rem;
+    padding-left: 2rem; padding-right: 2rem;
+}
+.display-inblock{
+  display: inline-block !important;
+}
+.login .content  input.form-control:focus {
+    border: 1px solid #5867dd !important;
+}
+::placeholder {
+  color: #595a6a !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #595a6a !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #595a6a !important;
+}
+.btn-primary {
+    background-color: #5867dd !important;
+    border-color: #5867dd !important;
+    color: #ffffff !important;
+}
+.btn-reset {
+  background-color: #1e1e2d !important;
+  border: 1px solid #41415f !important;
+  color: #7a7a7b !important;
+}
+.button-default {
+    padding: 9px 15px 8px !important;
+    font-size: 1.3rem !important;
+    font-weight: 300 !important;
+    border-radius: 7px !important;
+    text-transform: capitalize !important;
+}
+.login .form-title , .login .form-subtitle, .login .content .check {
+    color: #74788d !important;
+}
+.login .content .check {
+    font-size: 1.3rem;
+}
+.login a {
+    color: #5867dd!important;font-size: 1.3rem !important;
+}
+.login .btn {
+    border: 1px solid #5867dd;
+    padding: 10px 49px!important;
+    border-radius: 41px !important;
+    font-weight: 500 !important;
+    display: block;
+    margin: 0px auto;
+    margin-top: 40px !important;
+}
+.login .content .form-title {
+    margin-bottom: 40px;
+}
+.alert-danger {
+    background-color: #1e1e2d;
+    border-color: #1e1e2d;
+    color: #e73d4a;
+    text-align: center;
+    font-family: "Poppins", Helvetica, sans-serif;
+}
+.login .copyright {
+    text-align: center;
+    margin: 10px auto 30px 0;
+    padding: 10px;
+    color: #4c5467;
+    font-size: 1.1rem;
+    font-family: "Poppins", Helvetica, sans-serif;
+
+}
