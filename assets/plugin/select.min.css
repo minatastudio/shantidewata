@@ -1,0 +1,94 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.select {
+    position: relative;
+    width: 100%;
+    border-radius: 0.51rem;
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
+    padding-right: 1rem;
+    border: 1px solid var(--color-light-grey);
+    color: var(--color-black);
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 0.8rem;
+}
+.select .value {
+    display: block;
+    position: relative;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 12px;
+    color: #1f202a;
+    padding:0rem 1rem;
+    border-bottom: none;
+    cursor: pointer;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+.select .value::before {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin: -2px 0;
+    width: 0px;
+    height: 0px;
+    content: "";
+    border-width: 4px;
+    border-style: solid;
+    border-color: #d1d2dd transparent transparent;
+}
+.select .list {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    opacity: 0;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+    z-index: 9999;
+    border-radius: 0.51rem;
+    font-size: 0.8rem;
+    border: 1px solid var(--color-light-grey);
+    
+}
+.select .list.open {
+    height: auto;
+    opacity: 1;
+}
+.select .list .filter {
+    display: none;
+    padding: 8px 10px;
+}
+
+.select .list ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.select .list ul li {
+    display: block;
+    list-style: none;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 12px;
+    color: #1f202a;
+    padding: 8px 1rem;
+    cursor: pointer;
+}
+.select .list ul li:hover,
+.select .list ul li.hovered {
+    color: #fff;
+    background: #e3af43;
+}
+.select.large .filter {
+    display: block;
+}
+.select.large .list ul {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+

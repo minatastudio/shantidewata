@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="stylesheet" href="/assets/style/reset.css" />
+        <link rel="stylesheet" href="/assets/style/normalize.css" />
+        <!-- <link rel="stylesheet" href="/assets/plugin/select.min.css"> -->
+        <script src="/assets/plugin/select.min.js"></script>
+        <link rel="stylesheet" href="/assets/svgicon/style.css" />
+        <link rel="stylesheet" href="/assets/style/style.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="navbar wrapper">
+                    <div class="logo">
+                        <a href="#"
+                            ><img src="/assets/image/logo.webp" alt=""
+                        /></a>
+                    </div>
+
+                    <div class="nav-links">
+                        <div class="sidebar-logo">
+                            <img src="/assets/image/logo.webp" alt="" />
+                            <i class="bx icon-close"></i>
+                        </div>
+                        <ul class="links">
+                            <li>
+                                <a href="#">Property Management</a>
+                                <i class="arrow-sub1 arrow icon-up-arrow"></i>
+                                <ul class="js-sub-menu1 sub-menu">
+                                    <li><a href="#">Design</a></li>
+                                    <li><a href="#">Build</a></li>
+                                    <li><a href="#">Management</a></li>
+                                    <li><a href="#">Marketing</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Villa Sale</a>
+                                <i
+                                    class="htmlcss-arrow arrow icon-up-arrow"
+                                ></i>
+                                <ul class="htmlCss-sub-menu sub-menu">
+                                    <li><a href="#">Free Hold</a></li>
+                                    <li><a href="#">Lease Hold</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Land Sale</a>
+                                <i class="js-arrow arrow icon-up-arrow"></i>
+                                <ul class="js-sub-menu sub-menu">
+                                    <li><a href="#">Free Hold</a></li>
+                                    <li><a href="#">Lease Hold</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Other Sale</a>
+                                <i class="arrow-sub2 arrow icon-up-arrow"></i>
+                                <ul class="js-sub-menu2 sub-menu">
+                                    <li><a href="#">Commercial</a></li>
+                                    <li><a href="#">Building</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Villa Rental</a>
+                                <i class="arrow-sub3 arrow icon-up-arrow"></i>
+                                <ul class="js-sub-menu3 sub-menu">
+                                    <li><a href="#">Daily</a></li>
+                                    <li><a href="#">Yearly</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-icon">
+                        <ul>
+                            <li><i class="icon-menu"></i></li>
+                            <li>
+                                <a href=""><i class="icon-home"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="icon-map"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- top content -->
+        <section class="top-slide page-listing">
+            <div class="main-title wrapper">
+                <h1>Let's find the <span>Perfect Place in Bali</span></h1>
+                <h4>
+                    You Can <strong>Dream</strong>, <strong>Create</strong>,
+                    <strong>Design</strong>, And <strong>Build</strong> The Most
+                    Wonderful Place In The World. But It Requires People To Make
+                    The Dream A Reality.
+                </h4>
+            </div>
+            <div>
+                <!-- <img src="/assets/image/img-1.jpg" alt="" /> -->
+            </div>
+            <div class="search-form wrapper">
+                <form action="">
+                    <h3>Find Your <span>Best Property</span></h3>
+                    <div>
+                        <input type="text" placeholder="Search Keyword" />
+                        <select id="location" class="w15">
+                            <option value="1">Location</option>
+                            <option value="2">CSS3</option>
+                            <option value="3">JavaScript</option>
+                        </select>
+                        <select id="property" class="w15">
+                            <option value="1">Property</option>
+                            <option value="2">CSS3</option>
+                            <option value="3">JavaScript</option>
+                        </select>
+                        <select id="tipe" class="w15">
+                            <option value="1">Type</option>
+                            <option value="2">CSS3</option>
+                            <option value="3">JavaScript</option>
+                        </select>
+                        <input
+                            type="text"
+                            placeholder="Min Bedroom"
+                            class="w15"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Max Bedroom"
+                            class="w15"
+                        />
+                        <input type="text" placeholder="Min Price" />
+                        <input type="text" placeholder="Max Price" />
+                        <input type="text" placeholder="Min Land Size (M2)" />
+                        <input type="text" placeholder="Max Land Size (M2)" />
+                        <button type="submit">
+                            <i class="icon-search"></i> Search
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- list -->
+        <section class="listing wrapper">
+            <h2>Our Perfect Place in Bali</h2>
+            <div>
+                <!-- list property -->
+                <div class="thumb-property">
+                    <div>
+                        <h5>Seminyak Luxury Villa</h5>
+                        <span>SDP0093</span>
+                    </div>
+                    <div>
+                        <img src="/assets/image/img-1.jpg" alt="" srcset="" />
+                        <div>IDR. 4.500.000.000 <span>(freehold)</span></div>
+                    </div>
+                    <div>
+                        <i class="icon-map-1"><span>Karangasem</span></i>
+                        <i class="icon-square"
+                            ><span>200 M<sup>2</sup></span></i
+                        >
+                        <i class="icon-bedroom"><span>10 Bedroom</span></i>
+                        <i class="icon-bathroom"><span>16 Bathroom</span></i>
+                    </div>
+                </div>
+                <div class="thumb-property">
+                    <div>
+                        <h5>Seminyak Luxury Villa</h5>
+                        <span>SDP0093</span>
+                    </div>
+                    <div>
+                        <img src="/assets/image/img-1.jpg" alt="" srcset="" />
+                        <div>IDR. 4.500.000.000 <span>(freehold)</span></div>
+                    </div>
+                    <div>
+                        <i class="icon-map-1"><span>Karangasem</span></i>
+                        <i class="icon-square"
+                            ><span>200 M<sup>2</sup></span></i
+                        >
+                        <i class="icon-bedroom"><span>10 Bedroom</span></i>
+                        <i class="icon-bathroom"><span>16 Bathroom</span></i>
+                    </div>
+                </div>
+                <div class="thumb-property">
+                    <div>
+                        <h5>Seminyak Luxury Villa</h5>
+                        <span>SDP0093</span>
+                    </div>
+                    <div>
+                        <img src="/assets/image/img-1.jpg" alt="" srcset="" />
+                        <div>IDR. 4.500.000.000 <span>(freehold)</span></div>
+                    </div>
+                    <div>
+                        <i class="icon-map-1"><span>Karangasem</span></i>
+                        <i class="icon-square"
+                            ><span>200 M<sup>2</sup></span></i
+                        >
+                        <i class="icon-bedroom"><span>10 Bedroom</span></i>
+                        <i class="icon-bathroom"><span>16 Bathroom</span></i>
+                    </div>
+                </div>
+                <div class="thumb-property">
+                    <div>
+                        <h5>Seminyak Luxury Villa</h5>
+                        <span>SDP0093</span>
+                    </div>
+                    <div>
+                        <img src="/assets/image/img-1.jpg" alt="" srcset="" />
+                        <div>IDR. 4.500.000.000 <span>(freehold)</span></div>
+                    </div>
+                    <div>
+                        <i class="icon-map-1"><span>Karangasem</span></i>
+                        <i class="icon-square"
+                            ><span>200 M<sup>2</sup></span></i
+                        >
+                        <i class="icon-bedroom"><span>10 Bedroom</span></i>
+                        <i class="icon-bathroom"><span>16 Bathroom</span></i>
+                    </div>
+                </div>
+                <div class="thumb-property">
+                    <div>
+                        <h5>Seminyak Luxury Villa</h5>
+                        <span>SDP0093</span>
+                    </div>
+                    <div>
+                        <img src="/assets/image/img-1.jpg" alt="" srcset="" />
+                        <div>IDR. 4.500.000.000 <span>(freehold)</span></div>
+                    </div>
+                    <div>
+                        <i class="icon-map-1"><span>Karangasem</span></i>
+                        <i class="icon-square"
+                            ><span>200 M<sup>2</sup></span></i
+                        >
+                        <i class="icon-bedroom"><span>10 Bedroom</span></i>
+                        <i class="icon-bathroom"><span>16 Bathroom</span></i>
+                    </div>
+                </div>
+                <div class="thumb-property">
+                    <div>
+                        <h5>Seminyak Luxury Villa</h5>
+                        <span>SDP0093</span>
+                    </div>
+                    <div>
+                        <img src="/assets/image/img-1.jpg" alt="" srcset="" />
+                        <div>IDR. 4.500.000.000 <span>(freehold)</span></div>
+                    </div>
+                    <div>
+                        <i class="icon-map-1"><span>Karangasem</span></i>
+                        <i class="icon-square"
+                            ><span>200 M<sup>2</sup></span></i
+                        >
+                        <i class="icon-bedroom"><span>10 Bedroom</span></i>
+                        <i class="icon-bathroom"><span>16 Bathroom</span></i>
+                    </div>
+                </div>
+            </div>
+            <div class="btm-link">
+                <a href="" class="link-big"
+                    >Find More Perfect Property in Bali</a
+                >
+            </div>
+        </section>
+        <section class="why">
+            <div class="wrapper">
+                <div>
+                    <h2>
+                        Why Should With <span>Shanti Dewata Property</span> ?
+                    </h2>
+                    <h5>We're here to help you find the right property!</h5>
+                    <div class="why-list">
+                        <i class="icon-invest"></i>
+                        <div>
+                            <h4>Safe Investment</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="why-list">
+                        <i class="icon-team"></i>
+                        <div>
+                            <h4>Professional Team</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="why-list">
+                        <i class="icon-map-1"></i>
+                        <div>
+                            <h4>Perfect Locations</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="" class="link-svg"
+                        ><i class="icon-whatsapp1"></i> Start Discuss With Us
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="wrapper">
+                <div class="right">
+                    <h2>Perfect Links Property</h2>
+                    <ul>
+                        <li><a href="">Villa Rental</a></li>
+                        <li><a href="">Villa Sale</a></li>
+                        <li><a href="">Villa Rental</a></li>
+                        <li><a href="">Land Sale</a></li>
+                        <li><a href="">Property Management</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Marketing</a></li>
+                        <li><a href="">Design</a></li>
+                        <li><a href="">Build Property</a></li>
+                        <li class="sosmed">
+                            <a href=""><i class="icon-facebook"></i></a
+                            ><a href=""><i class="icon-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="left">
+                    <img src="/assets/image/logo.webp" alt="" />
+                    <ul>
+                        <li>
+                            <div><i class="icon-map"></i></div>
+                            <div>
+                                Jl. Batu Belig Gang Casa Batubelig, Kerobokan
+                                Kelod Kec. Kuta Utara, Kabupaten Badung, Bali
+                                80361
+                            </div>
+                        </li>
+                        <li>
+                            <div><i class="icon-whatsapp1"></i></div>
+                            <div>0827 9829 0989</div>
+                        </li>
+                        <li>
+                            <div><i class="icon-mail"></i></div>
+                            <div>shantidewata@gmail.com</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="wrapper">
+                    <div>
+                        ©2022 Bali Ride. All Right Reserved.
+                        <a href="">Shanti Dewata Property</a>
+                    </div>
+                    <div>
+                        Design By :
+                        <a href="">
+                            <span class="icon-logo-minata"
+                                ><span class="path1"></span
+                                ><span class="path2"></span
+                                ><span class="path3"></span
+                                ><span class="path4"></span
+                                ><span class="path5"></span
+                                ><span class="path6"></span
+                                ><span class="path7"></span></span
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            // search-box open close js code
+            let navbar = document.querySelector('.navbar');
+            // sidebar open close js code
+            let navLinks = document.querySelector('.nav-links');
+            let menuOpenBtn = document.querySelector('.navbar .icon-menu');
+            let menuCloseBtn = document.querySelector('.nav-links .icon-close');
+            menuOpenBtn.onclick = function () {
+                navLinks.style.left = '0';
+            };
+            menuCloseBtn.onclick = function () {
+                navLinks.style.left = '-100%';
+            };
+
+            // sidebar submenu open close js code
+            let htmlcssArrow = document.querySelector('.htmlcss-arrow');
+            htmlcssArrow.onclick = function () {
+                navLinks.classList.toggle('show1');
+            };
+            let moreArrow1 = document.querySelector('.arrow-sub1');
+            moreArrow1.onclick = function () {
+                navLinks.classList.toggle('show2');
+            };
+            let jsArrow = document.querySelector('.js-arrow');
+            jsArrow.onclick = function () {
+                navLinks.classList.toggle('show3');
+            };
+            let moreArrow2 = document.querySelector('.arrow-sub2');
+            moreArrow2.onclick = function () {
+                navLinks.classList.toggle('show4');
+            };
+            let moreArrow3 = document.querySelector('.arrow-sub3');
+            moreArrow3.onclick = function () {
+                navLinks.classList.toggle('show5');
+            };
+            // select
+            var mylocation = new Select('#location', {
+                // auto show the live filter
+                filtered: 'auto',
+                // auto show the live filter when the options >= 8
+                filter_threshold: 8,
+                // custom placeholder
+                filter_placeholder: 'Search Location',
+            });
+            var myproperty = new Select('#property', {
+                // auto show the live filter
+                filtered: 'auto',
+                // auto show the live filter when the options >= 8
+                filter_threshold: 8,
+                // custom placeholder
+                filter_placeholder: 'Search Location',
+            });
+            var mytipe = new Select('#tipe', {
+                // auto show the live filter
+                filtered: 'auto',
+                // auto show the live filter when the options >= 8
+                filter_threshold: 8,
+                // custom placeholder
+                filter_placeholder: 'Search Location',
+            });
+        </script>
+    </body>
+</html>

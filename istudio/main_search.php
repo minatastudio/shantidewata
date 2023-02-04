@@ -30,7 +30,7 @@
                         if (isset($_POST[submit])) {
 
 
-                            for ($i = 1; $i <= 1; $i++) {
+                            for ($i = 1; $i <= 2; $i++) {
 
                                 $img = $_FILES["imgedit" . ($i)]["name"];
                                 if ($img != "") {
@@ -46,8 +46,8 @@
                             $img_name = substr($image_name, 0, -1);
 
                             $meta = $_POST[title] . "^" . $_POST[keyword] . "^" . $_POST[description];
-                            $name = $_POST[name] . "^" . $_POST[name1] . "^" . $_POST[name2] . "^" . $_POST[name3] . "^" . $_POST[name4] . "^" . $_POST[icon1] . "^" . $_POST[icon2] . "^" . $_POST[icon3] . "^" . $_POST[name5];
-                            $content = $_POST[editor1] . "^" . $_POST[editor2] . "^" . $_POST[editor3] . "^" . $_POST[editor4];
+                            $name = $_POST[name] . "^" . $_POST[name1];
+                            $content = $_POST[editor1] . "^" . $_POST[editor2];
 
 
                             $insert = edit_1($_POST[id], $name, $content, $data_images, $img_name, $meta, $tb_content, $con);
@@ -64,9 +64,7 @@
                         ?>
                         <input type="hidden" name="id" data-required="1" class="form-control" value="<?php echo "$_GET[pageid]"; ?>" />
                         <input type="hidden" class="form-control" name="image_data1" value="<?php echo "$imgdata[0]"; ?>">
-                        <div class="alert alert-section">
-                            Banner Section
-                        </div>
+                        <input type="hidden" class="form-control" name="image_data2" value="<?php echo "$imgdata[1]"; ?>">
                         <div class="form-group">
                             <label class="control-label col-md-3">Title
                                 <span class="required"> * </span>
@@ -75,7 +73,6 @@
                                 <input type="text" name="name" data-required="1" class="form-control" value="<?php echo "$name[0]"; ?>" />
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label class="control-label col-md-3">Image Banner
                                 <span class="required"> * </span>
@@ -97,118 +94,14 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Description
+                            <label class="control-label col-md-3">Top Description
                                 <span class="required"> * </span>
                             </label>
                             <div class="col-md-9">
-                                <textarea class="wysihtml5 form-control" rows="10" name="editor1" data-error-container="#editor1_error"><?php echo "$content[0]"; ?></textarea>
+                                <textarea class="wysihtml5 form-control" rows="20" name="editor1" data-error-container="#editor1_error"><?php echo "$content[0]"; ?></textarea>
                                 <div id="editor1_error"> </div>
                             </div>
                         </div>
-
-
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Common Title
-                                <span class="required"> * </span>
-                            </label>
-                            <div class="col-md-9">
-                                <input type="text" name="name1" data-required="1" class="form-control" value="<?php echo "$name[1]";  ?>" />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Common Tag Line
-                                <span class="required"> * </span>
-                            </label>
-                            <div class="col-md-9">
-                                <input type="text" name="name5" data-required="1" class="form-control" value="<?php echo "$name[8]";   ?>" />
-                            </div>
-                        </div>
-                        <div class="alert alert-section">
-                            Common Section Left
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Title
-                                <span class="required"> * </span>
-                            </label>
-                            <div class="col-md-9">
-                                <input type="text" name="name2" data-required="1" class="form-control" value="<?php echo "$name[2]"; ?>" />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Icon Class
-                                <span class="required"> * </span>
-                            </label>
-                            <div class="col-md-9">
-                                <input type="text" name="icon1" data-required="1" class="form-control" value="<?php echo "$name[5]"; ?>" />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Short Description
-                                <span class="required"> * </span>
-                            </label>
-                            <div class="col-md-9">
-                                <textarea class="wysihtml5 form-control" rows="5" name="editor2" data-error-container="#editor2_error"><?php echo "$content[1]"; ?></textarea>
-                                <div id="editor1_error"> </div>
-                            </div>
-                        </div>
-
-                        <div class="alert alert-section">
-                            Common Section Center
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Title
-                                <span class="required"> * </span>
-                            </label>
-                            <div class="col-md-9">
-                                <input type="text" name="name3" data-required="1" class="form-control" value="<?php echo "$name[3]"; ?>" />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Icon Class
-                                <span class="required"> * </span>
-                            </label>
-                            <div class="col-md-9">
-                                <input type="text" name="icon2" data-required="1" class="form-control" value="<?php echo "$name[6]"; ?>" />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Short Description
-                                <span class="required"> * </span>
-                            </label>
-                            <div class="col-md-9">
-                                <textarea class="wysihtml5 form-control" rows="5" name="editor3" data-error-container="#editor2_error"><?php echo "$content[2]"; ?></textarea>
-                                <div id="editor1_error"> </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Title
-                                <span class="required"> * </span>
-                            </label>
-                            <div class="col-md-9">
-                                <input type="text" name="name4" data-required="1" class="form-control" value="<?php echo "$name[4]"; ?>" />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Icon Class
-                                <span class="required"> * </span>
-                            </label>
-                            <div class="col-md-9">
-                                <input type="text" name="icon3" data-required="1" class="form-control" value="<?php echo "$name[7]"; ?>" />
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Short Description
-                                <span class="required"> * </span>
-                            </label>
-                            <div class="col-md-9">
-                                <textarea class="wysihtml5 form-control" rows="5" name="editor4" data-error-container="#editor2_error"><?php echo "$content[3]"; ?></textarea>
-                                <div id="editor1_error"> </div>
-                            </div>
-                        </div>
-
-
-
                         <div class="alert alert-section">
                             Meta Data Section
                         </div>

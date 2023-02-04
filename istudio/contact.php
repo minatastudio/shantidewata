@@ -56,14 +56,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Tag Line
-                                <span class="required"> * </span>
-                            </label>
-                            <div class="col-md-9">
-                                <input type="text" name="name1" data-required="1" class="form-control" value="<?php echo "$content[0]"; ?>" />
-                            </div>
-                        </div>
+
                         <div class="form-group">
                             <label class="control-label col-md-3">Address
                                 <span class="required"> * </span>

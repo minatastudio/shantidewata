@@ -49,7 +49,7 @@
                             $insert = "insert into $tb_property (id,code,name,category,location,type,landsize,buildsize,bedroom,bathroom,living,pool,garden,parking,view,furnished,floor,price,pricetype,pricenote,map,neighborhood,image,imagename,content,alias,meta,active)";
                             $insert .= "values ('$nomer ','$_POST[name1]','$_POST[name]','$_POST[category]','$_POST[location]','$_POST[tipe]','$_POST[land]','$_POST[build]','$_POST[bedroom]','$_POST[bathroom]','$_POST[living]',";
                             $insert .= "'$_POST[pool]','$_POST[garden]','$_POST[parking]','$_POST[view]','$_POST[furnished]','$_POST[lantai]','$_POST[price]','$_POST[tipeharga]','$_POST[pricenote]','$_POST[map]',";
-                            $insert .= "'$tetangga','$data_images','$img_name','$content','$alias','$meta','1')";
+                            $insert .= "'$tetangga','$data_images','$img_name','$content','$_POST[year]','$alias','$meta','1')";
                             $cek = mysqli_query($con, "select * from $tb_property where name = '$_POST[name]'");
                             if ($ceks = mysqli_fetch_array($cek, MYSQLI_BOTH)) {
                                 $hasil = "<div class=\"alert alert-danger\">";
@@ -164,6 +164,9 @@
                                     <option value="4">Per Month</option>
                                     <option value="5">Per Year</option>
                                     <option value="6">Per Are</option>
+                                    <option value="7">Per 100 M<sup>2</sup></option>
+                                    <option value="8">Per Are Per Year</option>
+                                    <option value="9">Per 100 M<sup>2</sup> Per Year</option>
                                 </select>
                             </div>
                         </div>
@@ -193,6 +196,14 @@
                             </label>
                             <div class="col-md-3">
                                 <input type="text" name="build" data-required="1" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Year Build
+                                <span class="required"> * </span>
+                            </label>
+                            <div class="col-md-3">
+                                <input type="text" name="year" data-required="1" class="form-control" value="" />
                             </div>
                         </div>
                         <div class="form-group">

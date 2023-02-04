@@ -24,10 +24,35 @@ if ($_GET[pageid] == "" || $_GET[pageid] == "dashboard") {
     $open_property3 = "active open";
     $title_admin1 = "property";
     $title_admin2 = "Edit Data";
-} else if ($_GET[pageid] == "main_property") {
+} else if ($_GET[pageid] == "main_villa") {
     $open3 = "active open";
     $open_property4 = "active open";
-    $title_admin1 = "property";
+    $title_admin1 = "Villa";
+    $title_admin2 = "Main Page";
+} else if ($_GET[pageid] == "main_land") {
+    $open3 = "active open";
+    $open_property5 = "active open";
+    $title_admin1 = "Land";
+    $title_admin2 = "Main Page";
+} else if ($_GET[pageid] == "main_rental") {
+    $open3 = "active open";
+    $open_property6 = "active open";
+    $title_admin1 = "Villa Rental";
+    $title_admin2 = "Main Page";
+} else if ($_GET[pageid] == "main_commercial") {
+    $open3 = "active open";
+    $open_property7 = "active open";
+    $title_admin1 = "Commercial";
+    $title_admin2 = "Main Page";
+} else if ($_GET[pageid] == "main_business") {
+    $open3 = "active open";
+    $open_property8 = "active open";
+    $title_admin1 = "Business";
+    $title_admin2 = "Main Page";
+} else if ($_GET[pageid] == "main_search") {
+    $open3 = "active open";
+    $open_property9 = "active open";
+    $title_admin1 = "Search Property";
     $title_admin2 = "Main Page";
 } else if ($_GET[pageid] == "data_category") {
     $open4 = "active open";
@@ -171,9 +196,39 @@ if ($_GET[pageid] == "" || $_GET[pageid] == "dashboard") {
                             </li>
                         <?php } ?>
                         <li class="nav-item <?php echo "$open_property4"; ?> ">
-                            <a href="page.php?pageid=main_property" class="nav-link ">
+                            <a href="page.php?pageid=main_villa" class="nav-link ">
                                 <i class="fa fa-circle"></i>
-                                <span class="title">Main Property</span>
+                                <span class="title">Main Villa</span>
+                            </a>
+                        </li>
+                        <li class="nav-item <?php echo "$open_property5"; ?> ">
+                            <a href="page.php?pageid=main_land" class="nav-link ">
+                                <i class="fa fa-circle"></i>
+                                <span class="title">Main Land</span>
+                            </a>
+                        </li>
+                        <li class="nav-item <?php echo "$open_property6"; ?> ">
+                            <a href="page.php?pageid=main_rental" class="nav-link ">
+                                <i class="fa fa-circle"></i>
+                                <span class="title">Main Rental</span>
+                            </a>
+                        </li>
+                        <li class="nav-item <?php echo "$open_property7"; ?> ">
+                            <a href="page.php?pageid=main_commercial" class="nav-link ">
+                                <i class="fa fa-circle"></i>
+                                <span class="title">Main Commercial</span>
+                            </a>
+                        </li>
+                        <li class="nav-item <?php echo "$open_property8"; ?> ">
+                            <a href="page.php?pageid=main_business" class="nav-link ">
+                                <i class="fa fa-circle"></i>
+                                <span class="title">Main Business</span>
+                            </a>
+                        </li>
+                        <li class="nav-item <?php echo "$open_property9"; ?> ">
+                            <a href="page.php?pageid=main_search" class="nav-link ">
+                                <i class="fa fa-circle"></i>
+                                <span class="title">Main Search</span>
                             </a>
                         </li>
                     </ul>
@@ -300,6 +355,12 @@ if ($_GET[pageid] == "" || $_GET[pageid] == "dashboard") {
                     <a href="page.php?pageid=marketing" class="nav-link nav-toggle">
                         <i class="icon-compass"></i>
                         <span class="title">Marketing</span>
+                    </a>
+                </li>
+                <li class="nav-item <?php echo "$open7"; ?>">
+                    <a href="page.php?pageid=contact" class="nav-link nav-toggle">
+                        <i class="icon-compass"></i>
+                        <span class="title">Contact</span>
                     </a>
                 </li>
                 <li class="nav-item <?php echo "$open6"; ?>">

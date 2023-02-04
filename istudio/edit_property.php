@@ -72,7 +72,7 @@
                             $update .= "buildsize ='$_POST[build]', bedroom = '$_POST[bedroom]', bathroom = '$_POST[bathroom]' ,living = '$_POST[living]', pool = '$_POST[pool]',garden = '$_POST[garden]' ,";
                             $update .= "parking = '$_POST[parking]',view = '$_POST[view]', furnished='$_POST[furnished]', floor = '$_POST[lantai]', price = '$_POST[price]', pricetype = '$_POST[tipeharga]',";
                             $update .= "pricenote = '$_POST[pricenote]', map = '$_POST[map]', neighborhood = '$tetangga', image = '$data_images', imagename = '$img_name', content = '$content', alias = '$alias',";
-                            $update .= "meta ='$meta' where id = '$_POST[id]'";
+                            $update .= "meta ='$meta', year = '$_POST[year]' where id = '$_POST[id]'";
 
 
                             $cek = mysqli_query($con, "select * from $tb_property where name = '$_POST[name]' and  category =  '$_POST[category]' and type = '$_POST[tipe]' and location = '$_POST[location]' and id != '$_POST[id]'");
@@ -213,8 +213,14 @@
                                         $tp4 = "selected";
                                     } else if ($data[pricetype] == "5") {
                                         $tp5 = "selected";
-                                    } else {
+                                    } else if ($data[pricetype] == "6") {
                                         $tp6 = "selected";
+                                    } else if ($data[pricetype] == "7") {
+                                        $tp7 = "selected";
+                                    } else if ($data[pricetype] == "8") {
+                                        $tp8 = "selected";
+                                    } else {
+                                        $tp9 = "selected";
                                     }
                                     ?>
                                     <option value="1" <?php echo $tp1; ?>>Total</option>
@@ -223,6 +229,9 @@
                                     <option value="4" <?php echo $tp4; ?>>Per Month</option>
                                     <option value="5" <?php echo $tp5; ?>>Per Year</option>
                                     <option value="6" <?php echo $tp6; ?>>Per Are</option>
+                                    <option value="7" <?php echo $tp7; ?>>Per 100 M<sup>2</sup></option>
+                                    <option value="8" <?php echo $tp8; ?>>Per Are Per Year</option>
+                                    <option value="9" <?php echo $tp9; ?>>Per 100 M<sup>2</sup> Per Year</option>
                                 </select>
                             </div>
                         </div>
@@ -252,6 +261,14 @@
                             </label>
                             <div class="col-md-3">
                                 <input type="text" name="build" data-required="1" class="form-control" value="<?php echo $data[buildsize]; ?>" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Year Build
+                                <span class="required"> * </span>
+                            </label>
+                            <div class="col-md-3">
+                                <input type="text" name="year" data-required="1" class="form-control" value="<?php echo $data[year]; ?>" />
                             </div>
                         </div>
                         <div class="form-group">
